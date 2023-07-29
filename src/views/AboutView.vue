@@ -219,10 +219,6 @@ function print(text: string): void {
   },
   created() {
     this.abortSignal = this.abortController.signal
-  },
-  unmounted() {
-    this.progressiveSub.unsubscribe()
-    this.constantSub.unsubscribe()
   }
 })
 export default class HomeView extends Vue {
